@@ -69,7 +69,6 @@ void ClapTrap::attack(const std::string& target)
 	} else {
 		std::cout << "ClapTrap " << this->getName() << " energy is 0" << std::endl;
 	}
-
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
