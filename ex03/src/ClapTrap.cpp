@@ -90,6 +90,6 @@ void ClapTrap::beRepaired(unsigned int amount)
 		this->hitPoint += amount;
 		this->energyPoint -= 1;
 	} else {
-		std::cout << "ClapTrap " << this->getName() << " point is 0" << std::endl;
+		std::cout << "ClapTrap " << this->getName() << "point is 0" << std::endl;
 	}
 }

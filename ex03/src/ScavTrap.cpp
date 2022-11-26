@@ -32,7 +32,7 @@ ScavTrap& ScavTrap::operator=(ScavTrap& scavTrap)
 	{
 		this->name = scavTrap.getName();
 		this->hitPoint = scavTrap.getHitPoint();
-		this->energyPoint = scavTrap.getHitPoint();
+		this->energyPoint = scavTrap.getEnergyPoint();
 		this->attackDamage = scavTrap.getAttackDamage();
 	}
 	return *this;
@@ -53,6 +53,6 @@ void ScavTrap::attack(const std::string& target)
 		std::cout << ", causing " << this->getAttackDamage() << " points of damage!" << std::endl;
 		this->energyPoint -= 1;
 	} else {
-		std::cout << "ScavTrap " << this->getName() << " have no energy left." << std::endl;
+		std::cout << "ScavTrap " << this->getName() << " energy is 0" << std::endl;
 	}
 }
